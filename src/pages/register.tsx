@@ -1,7 +1,7 @@
 import LoginCard from "@/components/loginCard"
 import styles from '@/styles/Login.module.css'
 
-export default function LoginPage() {
+export default function RegisterForm() {
     return (
         <div className={styles.background}>
             <LoginCard />
