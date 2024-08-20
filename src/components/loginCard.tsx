@@ -1,9 +1,14 @@
+import { ReactNode } from 'react'
 import styles from './loginCard.module.css'
 
-export default function LoginCard() {
+interface LoginCardProps {
+    children?: ReactNode
+}
+
+export default function LoginCard({ children }: LoginCardProps) {
     return (
         <div className={styles.card}> 
-            Login Card
+            {children}
         </div>
     )
 }
