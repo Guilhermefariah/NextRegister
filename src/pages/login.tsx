@@ -4,7 +4,9 @@ import styles from '@/styles/login.module.css'
 export default function LoginPage() {
     return (
         <div className={styles.background}>
-            <LoginCard />
+            <LoginCard title='Entre em sua conta'>
+                Login
+            </LoginCard>
         </div>
     )
 }

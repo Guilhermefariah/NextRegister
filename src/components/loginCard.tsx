@@ -3,11 +3,13 @@ import styles from './loginCard.module.css'
 
 interface LoginCardProps {
     children?: ReactNode
+    title?: ReactNode
 }
 
-export default function LoginCard({ children }: LoginCardProps) {
+export default function LoginCard({ title, children }: LoginCardProps) {
     return (
-        <div className={styles.card}> 
+        <div className={styles.card}>
+            <h2 className={styles.title}>{title}</h2> 
             {children}
         </div>
     )
