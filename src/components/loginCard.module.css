@@ -1,10 +1,17 @@
 .card {
     background-color: #ffffff;
     width: 400px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;  
+    border-radius: 15px;  
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    overflow: hidden; 
 }
 
 .title {
     text-align: center;
+    font-size: 24px;  
+    font-weight: 700;  
+    color: #000000;  
+    margin-bottom: 15px; 
 }
