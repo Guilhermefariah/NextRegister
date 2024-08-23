@@ -1,8 +1,8 @@
 import Link from "next/link"
 import LoginCard from '@/components/loginCard'
 import styles from '@/styles/login.module.css'
-import Input from "@/components/input/input"
-import Button from "@/components/button/button"
+import Input from "@/components/ui/input/input"
+import Button from "@/components/ui/button/button"
 
 export default function RegisterForm() {
     return (
