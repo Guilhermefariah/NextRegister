@@ -17,7 +17,7 @@ O nextregister é um aplicativo web que visa [inserir breve descrição do objet
 
 1. Clone o repositório do projeto:
 ```
-git clone https://github.com/seu-usuario/nextregister.git
+git clone https://github.com/Guilhermefariah/NextRegister
 ```
 2. Instale as dependências do projeto:
 ```
@@ -41,7 +41,3 @@ Se você deseja contribuir para o projeto, por favor, siga os passos abaixo:
 ## Licença
 
 O nextregister é licenciado sob a licença MIT. Veja o arquivo LICENSE para mais informações.
-
-## Contato
-
-Se você tiver alguma dúvida ou precisar de ajuda, por favor, entre em contato conosco através do endereço de e-mail [seu-e-mail].
