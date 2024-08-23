@@ -1,9 +1,40 @@
 .background {
-    background-color: #000000;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.background h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.background p {
+    font-size: 18px;
+    color: #ffffff; 
+    margin-bottom: 20px;
+}
+
+.background a {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.background a:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); 
+    transform: scale(1.05); 
 }
 
 .form {
