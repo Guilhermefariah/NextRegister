@@ -1,17 +1,29 @@
 .card {
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #1a1a1a, #3b3b3b); 
     width: 400px;
-    padding: 25px;  
-    border-radius: 15px;  
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s, box-shadow 0.3s; 
-    overflow: hidden; 
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5); 
 }
 
 .title {
     text-align: center;
-    font-size: 24px;  
-    font-weight: 700;  
-    color: #000000;  
-    margin-bottom: 15px; 
+    font-size: 26px;
+    font-weight: 200;
+    color: #ffffff; 
+    margin-bottom: 15px;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+

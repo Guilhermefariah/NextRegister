@@ -1,5 +1,5 @@
 .background {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    background: linear-gradient(135deg, #1a1a1a, #3b3b3b); 
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -10,30 +10,34 @@
 
 .background h1 {
     font-size: 36px;
-    color: #ffffff;
+    font-weight: 200;
+    color: #ff0000; 
     margin-bottom: 10px;
 }
 
 .background p {
-    font-size: 18px;
+    font-size: 26px;
+    font-weight: 200;
     color: #ffffff; 
     margin-bottom: 20px;
 }
 
 .background a {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    background: linear-gradient(135deg, #ff0000, #990000); 
     color: #ffffff; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none; 
-    font-weight: bold; 
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .background a:hover {
-    background: linear-gradient(135deg, #feb47b, #ff7e5f); 
+    background: linear-gradient(135deg, #990000, #ff0000); 
     transform: scale(1.05); 
 }
 
