@@ -1,6 +1,7 @@
 .card {
     background: linear-gradient(135deg, #1a1a1a, #3b3b3b); 
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
@@ -20,10 +21,3 @@
     color: #ffffff; 
     margin-bottom: 15px;
 }
-
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-

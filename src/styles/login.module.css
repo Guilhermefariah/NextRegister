@@ -25,9 +25,9 @@
 .background a {
     background: linear-gradient(135deg, #ff0000, #990000); 
     color: #ffffff; 
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     text-decoration: none; 
     font-weight: 400;
