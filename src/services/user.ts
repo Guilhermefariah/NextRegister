@@ -22,6 +22,10 @@ function readToken(token: string) {
     }
 }
 
+export function validateToken(token: string) {
+    return readToken(token)
+}
+
 export function register(body: User): { token: string } {
     const existingUser = users.find(({ email }) => email === body.email)
     if (existingUser) throw new Error('User already registered!')
