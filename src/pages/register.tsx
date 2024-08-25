@@ -1,11 +1,12 @@
+import styles from '@/styles/login.module.css'
 import Link from "next/link"
 import { useState } from "react"
+import { setCookie } from 'cookies-next'
+import { useRouter } from 'next/router'
 
 import LoginCard from '@/components/loginCard'
 import Input from "@/components/ui/input/input"
 import Button from "@/components/ui/button/button"
-
-import styles from '@/styles/login.module.css'
 
 export default function RegisterForm() {
     const [formData, setFormData] = useState({
@@ -14,6 +15,9 @@ export default function RegisterForm() {
         password: ''
     })
 
+    const [error, setError] = useState('')
+    const router = useRouter()
+
     const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>, name: string) => {
         setFormData({
             ...formData,
@@ -21,9 +25,28 @@ export default function RegisterForm() {
         })
     }
 
-    const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        console.log(formData)
+    const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        try {
+            event.preventDefault()
+            const response = await fetch('/api/user/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+
+            const json = await response.json()
+
+            if (!response.ok) {
+                throw new Error(`Erro ao registrar: ${response.status} ${response.statusText}`)
+            }
+
+            setCookie('authorization', json)
+            router.push('/')
+        } catch (err) {
+            alert('User already exists')
+        }
     }
 
     return (

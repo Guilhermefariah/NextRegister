@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import LoginCard from "@/components/loginCard"
 import styles from '@/styles/login.module.css'
 import Input from "@/components/ui/input/input"
