@@ -1,43 +1,43 @@
 # 🏆 Next Register
 
-Este é um projeto de aplicativo web criado com Next.js, um framework para construir aplicações web escaláveis e performáticas.
+Um aplicativo web para gerenciar registros, construído com Next.js e TypeScript.
 
-## Sobre o Projeto
+**Funcionalidades**
 
-O nextregister é um aplicativo web que visa [inserir breve descrição do objetivo do projeto]. Ele foi criado com o objetivo de [inserir breve descrição do objetivo do projeto].
+* Cadastro de usuários
+* Login de usuários
+* Geração de tokens de autenticação com JWT
+* Validação de tokens
 
-## Tecnologias Utilizadas
+**Tecnologias utilizadas**
 
-* Next.js: Framework para construir aplicações web escaláveis e performáticas.
-* React: Biblioteca para construir interfaces de usuário.
-* TypeScript: Linguagem de programação para desenvolvimento de aplicações web.
-* Tailwind CSS: Framework de CSS para estilizar componentes.
+* Next.js
+* TypeScript
+* JSON Web Tokens (JWT)
+* Tailwind CSS
 
-## Como Executar o Projeto
+**Estrutura do projeto**
 
-1. Clone o repositório do projeto:
-```
-git clone https://github.com/Guilhermefariah/NextRegister
-```
-2. Instale as dependências do projeto:
-```
-npm install
-```
-3. Execute o servidor de desenvolvimento:
-```
-npm run dev
-```
-4. Abra o navegador e acesse o endereço `http://localhost:3000`.
+* `src/`: Pasta principal do projeto
+	+ `services/`: Pasta com serviços do aplicativo
+		- `user.ts`: Serviço de gerenciamento de usuários
+	+ `pages/`: Pasta com páginas do aplicativo
+		- `index.tsx`: Página inicial do aplicativo
+		- `login.tsx`: Página de login do aplicativo
+	+ `app/`: Pasta com configurações do aplicativo
+		- `layout.tsx`: Layout do aplicativo
+	+ `postcss.config.mjs`: Configuração do PostCSS
 
-## Como Contribuir
+**Instalação e execução**
 
-Se você deseja contribuir para o projeto, por favor, siga os passos abaixo:
+1. Clone o repositório: `git clone https://github.com/Guilhermefariah/NextRegister`
+2. Instale as dependências: `npm install` ou `yarn install`
+3. Execute o aplicativo: `npm run dev` ou `yarn dev`
 
-1. Faça um fork do repositório do projeto.
-2. Crie uma nova branch para sua contribuição.
-3. Faça as alterações necessárias.
-4. Envie um pull request para o repositório original.
+**Contribuição**
 
-## Licença
+Contribuições são bem-vindas! Se você encontrar algum erro ou tiver alguma sugestão, por favor, abra uma issue ou envie um pull request.
 
-O nextregister é licenciado sob a licença MIT. Veja o arquivo LICENSE para mais informações.
+**Licença**
+
+Este projeto é licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
