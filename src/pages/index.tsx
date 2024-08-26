@@ -1,7 +1,5 @@
 import styles from '@/styles/login.module.css'
 import Link from 'next/link'
-import { getCookie } from 'cookies-next'
-import { GetServerSideProps } from 'next'
 
 export default function Home() {
   return (
@@ -13,21 +11,3 @@ export default function Home() {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
-  try {
-    const token = getCookie('authorization', { req, res })
-    if (!token) {
-      throw new Error('Invalid token!')
-    }
-    return {
-      props: {}
-    }
-  } catch (err) {
-    return {
-      redirect: {
-        destination: '/login',
-        permanent: false
-      }
-    }
-  }
-}
