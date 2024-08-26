@@ -13,6 +13,7 @@
     font-weight: 200;
     color: #ff0000; 
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .background p {
@@ -20,6 +21,7 @@
     font-weight: 200;
     color: #ffffff; 
     margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 .background a {
@@ -33,7 +35,7 @@
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .background a:hover {
