@@ -16,7 +16,9 @@ export default function Home() {
 export const getServerSideProps = async ({ req, res }: { req: NextApiRequest, res: NextApiResponse }) => {
   try {
     const token = getCookie('authorization', { req, res })
-    if (!token) throw new Error('Invalid token!')
+    if (!token) {
+      throw new Error('Invalid token!')
+    }
     return {
       props: {}
     }
@@ -25,8 +27,7 @@ export const getServerSideProps = async ({ req, res }: { req: NextApiRequest, re
       redirect: {
         destination: '/login',
         permanent: false
-      },
-      props: {}
+      }
     }
   }
 }
