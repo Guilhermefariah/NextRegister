@@ -13,21 +13,22 @@ export default function Home() {
   )
 }
 
-export const getServerSideProps = async ({ req, res }: { req: NextApiRequest, res: NextApiResponse }) => {
-  try {
-    const token = getCookie('authorization', { req, res })
-    if (!token) {
-      throw new Error('Invalid token!')
-    }
-    return {
-      props: {}
-    }
-  } catch (err) {
-    return {
-      redirect: {
-        destination: '/login',
-        permanent: false
-      }
-    }
-  }
-}
+// export const getServerSideProps = async ({ req, res }: { req: NextApiRequest, res: NextApiResponse }) => {
+//   try {
+//     const token = getCookie('authorization', { req, res })
+//     if (!token) {
+//       throw new Error('Invalid token!')
+//     }
+//     return {
+//       props: {}
+//     }
+//   } catch (err) {
+//     console.log(err)
+//     return {
+//       redirect: {
+//         destination: '/login',
+//         permanent: false
+//       }
+//     }
+//   }
+// }
